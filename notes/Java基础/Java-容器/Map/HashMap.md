@@ -266,7 +266,7 @@ public class HashMap<K,V> extends AbstractMap<K,V>
 ```
 ##### 1.1.2.3.2 获取桶索引位置
 ```
-  JDK 1.8中是直接通过p = tab[i = (n - 1) & hash这个方法来确定桶索引位置的;
+  JDK 1.8中是直接通过 p = tab[i = (n - 1) & hash] 这个方法来确定桶索引位置的;
   
   [1]hash为扰动函数的产物;
   [2]n-1为当前hashmap的数组个数len-1;
